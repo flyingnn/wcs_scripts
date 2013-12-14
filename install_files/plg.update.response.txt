@@ -1,0 +1,2 @@
+-W maintenance.package="/apps/websphere/WASUpdateInstaller/maintenance/7.0.0-WS-PLG-LinuxX64-FP0000025.pak"
+-W product.location="/apps/ihs70/Plugins"

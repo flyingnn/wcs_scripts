@@ -1,0 +1,22 @@
+#./install -options "was_response.txt" -silent
+# post install verification /apps/websphere/ws70/bin/ivt.sh dmgr guestdm
+-OPT silentInstallLicenseAcceptance="true"
+-OPT checkFilePermissions="true"
+-OPT installType="installNew"
+-OPT disableOSPrereqChecking="true"
+-OPT profileType="management"
+-OPT feature="languagepack.console.all"
+-OPT feature="languagepack.server.all"
+-OPT PROF_enableAdminSecurity="false"
+-OPT installLocation="/apps/websphere/ws70"
+-OPT cimSelected="true"
+-OPT cimRepositoryLocation="/apps/websphere/ws70/cimrepos"
+-OPT PROF_profilePath=/apps/websphere/ws70dm/profiles
+-OPT PROF_profileName="guestdm"
+-OPT PROF_isDefault="true"
+-OPT PROF_serverType="DEPLOYMENT_MANAGER"
+-OPT PROF_hostName="commerce.localdomain"
+-OPT PROF_nodeName="lab.guest.dm"
+-OPT PROF_cellName="lab.guest"
+#-OPT PROF_portsFile="dmgr.portdef.props"
+#-OPT PROF_validatePorts="true"

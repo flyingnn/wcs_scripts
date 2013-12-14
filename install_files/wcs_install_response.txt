@@ -1,0 +1,24 @@
+#./setup_linux -options /home/wasuser/wcs_response.txt -silent
+# yum install compat-libstdc++-33.i68, else we will get ic_jni (libstdc++.so.5:  error
+# tail -100f /tmp/install.log
+ 
+-G licenseAccepted="true"
+-W CustomInstallOptions.commerceServer="true"
+-W CustomInstallOptions.commercePayments="false"
+-W CustomInstallOptions.remoteUtilities="true"
+-W CustomInstallOptions.commerceHelp="true"
+-W InstallPath.commerceLocation="/apps/websphere/wcs70"
+-W InstallPath.wasLocation="/apps/websphere/ws70"
+-W NonRoot.userID="wasuser"
+-W NonRoot.userGroup="webadmin"
+-W NonRootHome.userHome="/home/wasuser"
+-W DatabaseOptions.databaseType="2"
+-W DatabaseOptions.oracleHomeLocation="/apps/oracle/product/11.2.0/dbhome_1"
+-W DatabaseOptions.remoteDB="false"
+-W Database.userID="oracle"
+-W Database.userGroup="oinstall"
+-W Database.userHome="/home/oracle/"
+-W WebServerOptions.webServerType="0"
+-W ConfigManager.userPassword=vision123
+-G replaceExistingResponse="yesToAll"
+-G replaceNewerResponse="yesToAll"

@@ -1,0 +1,4 @@
+-W maintenance.package="/apps/websphere/WCSUpdateInstaller/maintenance/7.0.0-WS-WCServer-FP007.pak"
+-W product.location="/apps/websphere/wcs70/"
+-W update.type="install"
+

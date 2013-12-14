@@ -1,0 +1,8 @@
+#!/bin/sh
+WORKING_DIR=`pwd`
+WAS_HOME=/apps/websphere/ws70
+export WAS_HOME
+$WAS_HOME/bin/stopManager.sh
+$WAS_HOME/profiles/guest/bin/stopNode.sh
+$WAS_HOME/profiles/guest/bin/stopServer.sh server1
+

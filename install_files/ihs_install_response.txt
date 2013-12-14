@@ -1,0 +1,20 @@
+#Navigate to the directory that contains install script else it will error out
+#see the log.txt file in either the /logs/install/ directory or the $USER/ihslogs/
+#uninstall -silent to uninstall IHS
+# yum install gtk2.i686 is needed, this is becuase IHS 7 is 32 bit on linux and does not include 64 bit support
+# ihs version 8 includes 64 bit support
+ 
+-OPT silentInstallLicenseAcceptance="true"
+-OPT allowNonRootSilentInstall="false"
+-OPT disableOSPrereqChecking="true"
+-OPT installLocation="/apps/ihs70"
+-OPT httpPort="80"
+-OPT adminPort="8008"
+-OPT createAdminAuth="true"
+-OPT adminAuthUser="admin"
+-OPT adminAuthPassword="admin"
+-OPT adminAuthPasswordConfirm="admin"
+-OPT installPlugin="true"
+-OPT webserverDefinition="webserver1"
+#Change the hostname
+-OPT washostname=commerce.localdomain
