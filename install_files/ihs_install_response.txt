@@ -1,8 +1,12 @@
-#Navigate to the directory that contains install script else it will error out
-#see the log.txt file in either the /logs/install/ directory or the $USER/ihslogs/
-#uninstall -silent to uninstall IHS
+# Navigate to the directory that contains install script else it will error out
 # yum install gtk2.i686 is needed, this is becuase IHS 7 is 32 bit on linux and does not include 64 bit support
 # ihs version 8 includes 64 bit support
+# USAGE INSTALL: 
+# 	CZFA3ML\WAS\disk1\IHS\install -options "/home/wasuser/ihs_install_response.txt" -silent
+# 	Review the install log.txt file in either the /logs/install/ directory or the $USER/ihslogs/
+# USAGE UNINSTALL:
+#       <IHS_HOME>\uninstall\uninstall	
+
  
 -OPT silentInstallLicenseAcceptance="true"
 -OPT allowNonRootSilentInstall="false"

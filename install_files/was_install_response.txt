@@ -1,4 +1,9 @@
-#./install -options "was_response.txt" -silent
+# USAGE INSTALL:
+# 	CZFA3ML\WAS\disk2\WAS\install -options "/home/wasuser/was_install_response.txt" -silent
+# 	Run command as root user
+# USAGE UNINSTALL:
+# 	<WAS_HOME>\uninstall\uninstall -silent
+# 		
 # post install verification /apps/websphere/ws70/bin/ivt.sh dmgr guestdm
 -OPT silentInstallLicenseAcceptance="true"
 -OPT checkFilePermissions="true"
