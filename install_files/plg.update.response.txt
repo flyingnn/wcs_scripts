@@ -1,2 +1,9 @@
--W maintenance.package="/apps/websphere/WASUpdateInstaller/maintenance/7.0.0-WS-PLG-LinuxX64-FP0000025.pak"
+# USAGE INSTALL: <WAS_UPDATE_INSTALLER>/update.sh -options "/home/wasuser/plg.update.response.txt" -silent
+
+#uncomment to install 7.0.0.25
+#-W maintenance.package="/apps/websphere/WASUpdateInstaller/maintenance/7.0.0-WS-PLG-LinuxX64-FP0000025.pak"
+#-W product.location="/apps/ihs70/Plugins"
+
+-W maintenance.package="/apps/websphere/WASUpdateInstaller/maintenance/7.0.0-WS-PLG-LinuxX64-FP0000027.pak"
 -W product.location="/apps/ihs70/Plugins"
+
