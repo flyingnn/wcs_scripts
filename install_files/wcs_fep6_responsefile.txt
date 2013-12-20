@@ -1,0 +1,11 @@
+################################################################################
+#
+# Response file for WebSphere Commerce Feature Pack Installation
+#    /WC_V7.0_-_FEP6_FOR_MP_ML/server/install -options /media/sf_linux_share/WC_V7.0_-_FEP6_FOR_MP_ML/server/responsefile.txt -silent -is:javaconsole
+#
+################################################################################
+
+-OPT silentInstallLicenseAcceptance="true"     
+-OPT silentInstall3rdPartyLicenseAcceptance="true"
+-OPT installLocation="/apps/websphere/wcs70"
+
