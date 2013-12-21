@@ -1,0 +1,1 @@
+/apps/ihs70/bin/httpd -d /apps/ihs70 -d /apps/ihs70 -k start -f /apps/websphere/wcs70/instances/WCSRT/search/solr/home/httpconf/httpd.conf
