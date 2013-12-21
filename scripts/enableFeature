@@ -1,0 +1,2 @@
+# Use this to enable store-enhancements feature
+/apps/websphere/wcs70/bin/config_ant.sh -buildfile /apps/websphere/wcs70/components/common/xml/enableFeature.xml -DinstanceName=guest -DfeatureName=store-enhancements -DdbUserPassword=wcs7lab01 -DsolrHome=/apps/websphere/wcs70/instances/guest/search/solr/home -DautoConfigSearchWebserver=true -DisShareWCWebserverProduct=true -DsearchWebserverHostname=commerce.localdomain -DsearchWebserverInstallLocation=/apps/ihs70 -DsearchPluginInstallLocation=/apps/ihs70/Plugins
