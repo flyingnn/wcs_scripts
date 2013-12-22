@@ -2,6 +2,11 @@
 WORKING_DIR=`pwd`
 WAS_HOME=/apps/websphere/ws70
 export WAS_HOME
+#Start DMGR
 $WAS_HOME/bin/startManager.sh
+#Start node agent
 $WAS_HOME/profiles/guest/bin/startNode.sh
+#Start WCS WAS instance
 $WAS_HOME/profiles/guest/bin/startServer.sh server1
+#Start SOLR WAS instance
+$WAS_HOME/profiles/guest/bin/startServer.sh solrServer

@@ -1,1 +1,1 @@
-/apps/ihs70/bin/httpd -d /apps/ihs70 -d /apps/ihs70 -k stop -f /apps/websphere/wcs70/instances/WCSRT/search/solr/home/httpconf/httpd.conf
+/apps/ihs70/bin/apachectl -d /apps/ihs70 -d /apps/ihs70 -k stop -f /apps/websphere/wcs70/instances/guest/search/solr/home/httpconf/httpd.conf

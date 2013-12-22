@@ -2,7 +2,11 @@
 WORKING_DIR=`pwd`
 WAS_HOME=/apps/websphere/ws70
 export WAS_HOME
+#Stop DMGR
 $WAS_HOME/bin/stopManager.sh
+#Stop WAS WCS node agent
 $WAS_HOME/profiles/guest/bin/stopNode.sh
+#Stop WAS WCS instance
 $WAS_HOME/profiles/guest/bin/stopServer.sh server1
-
+#Stop WAS Solr instance
+$WAS_HOME/profiles/guest/bin/stopServer.sh solrServer
